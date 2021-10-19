@@ -126,6 +126,13 @@
     </section>
     <!-- Tabla con Resultado de BBDD -->
 
-    <footer class="footer"><P>GabrielR-Dev</P></footer>
+    <footer class="footer">
+        <P>GabrielR-Dev</P>
+        <section class="repo">
+                <div class="btn"><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">Perfil en Linkedin</a></div>
+                <div class="btn"><a href="https://github.com/GabrielR-Dev">Perfil en GitHub</a></div>
+                <div class="btn"><a href="https://github.com/GabrielR-Dev/Crud-PHP">Repositorio del Proyecto</a></div>
+        </section>
+    </footer>
 </body>
 </html>

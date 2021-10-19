@@ -34,7 +34,7 @@ if($validation == true){
         $base->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         $base->exec("SET CHARACTER SET utf8");
 
-        $sql = "UPDATE `data_users` SET nombre= :nam, apellido=:las, edad= :age, telefono= :pho WHERE id=:id";
+        $sql = "UPDATE $db_table SET nombre= :nam, apellido=:las, edad= :age, telefono= :pho WHERE id=:id";
 
         $statemend = $base->prepare($sql);
 

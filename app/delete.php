@@ -8,7 +8,7 @@ try {
     $base->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     $base->exec("SET CHARACTER SET utf8");
 
-    $sql = "DELETE FROM `data_users` WHERE id= $id";
+    $sql = "DELETE FROM $db_table WHERE id= $id";
 
     $statemend = $base->prepare($sql);
     $statemend->execute();

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PseudoCrud</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
@@ -25,8 +25,6 @@
             $statemend->execute();
             
             $arrayData = $statemend->fetchAll(PDO::FETCH_ASSOC);
-
-            include "app/values-bbdd.php";
             
         } catch (Exception $e) {
             echo "Error: ".$e->getMessage()."<br> En la linea: ".$e->getLine();
@@ -129,9 +127,9 @@
     <footer class="footer">
         <P>GabrielR-Dev</P>
         <section class="repo">
-                <div class="btn"><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">Perfil en Linkedin</a></div>
-                <div class="btn"><a href="https://github.com/GabrielR-Dev">Perfil en GitHub</a></div>
-                <div class="btn"><a href="https://github.com/GabrielR-Dev/Crud-PHP">Repositorio del Proyecto</a></div>
+                <div class="btn"><a target="_blank" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">Perfil en Linkedin</a></div>
+                <div class="btn"><a target="_blank" href="https://github.com/GabrielR-Dev">Perfil en GitHub</a></div>
+                <div class="btn"><a target="_blank" href="https://github.com/GabrielR-Dev/Crud-PHP">Repositorio del Proyecto</a></div>
         </section>
     </footer>
 </body>
